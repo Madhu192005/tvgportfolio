@@ -18,6 +18,57 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body data-theme="light">
+  <!-- Interactive Welcome Intro Screen -->
+  <div id="welcomeScreen" class="welcome-screen" role="dialog" aria-modal="true" aria-label="Welcome screen">
+    <div class="welcome-backdrop-particles">
+      <div class="w-particle w-p1"></div>
+      <div class="w-particle w-p2"></div>
+      <div class="w-particle w-p3"></div>
+      <div class="w-math-symbol w-m1">&int;</div>
+      <div class="w-math-symbol w-m2">&sum;</div>
+      <div class="w-math-symbol w-m3">G=(V,E)</div>
+      <div class="w-math-symbol w-m4">&Delta;&le;&chi;'</div>
+    </div>
+
+    <div class="welcome-card" id="welcomeCard">
+      <!-- Standing Avatar with Glow -->
+      <div class="welcome-avatar-box">
+        <div class="welcome-avatar-glow"></div>
+        <img src="assets/welcome-avatar.png" alt="Dr. T.V.G. Shri Prakash" class="welcome-standing-avatar" id="welcomeAvatarImg">
+      </div>
+
+      <!-- Speech Bubble & Call to Action -->
+      <div class="welcome-content-box">
+        <div class="speech-bubble-tail"></div>
+        <div class="welcome-speech-card">
+          <div class="welcome-badge">
+            <span class="welcome-pulse"></span>
+            <span>Academic Portfolio</span>
+          </div>
+          
+          <h1 class="welcome-greeting">
+            Hi, I'm <span class="text-gradient">Dr. Shri Prakash</span>!
+          </h1>
+
+          <p class="welcome-subtitle">
+            Associate Professor of Mathematics &bull; Ph.D in Graph Theory
+          </p>
+          <p class="welcome-affiliation">
+            Sri Meenakshi Vidiyal Arts &amp; Science College &bull; Former SASTRA Faculty
+          </p>
+
+          <div class="welcome-cta-group">
+            <button id="enterPortfolioBtn" class="btn btn-primary btn-welcome-cta" title="Click to enter portfolio">
+              <span>Click me to explore more</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <span class="welcome-tip"><i class="fa-solid fa-hand-pointer"></i> or click anywhere to begin</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Accessibility: Skip to Content Link -->
   <a href="#about" class="skip-to-content">Skip to Main Content</a>
   <!-- Reading Scroll Progress Bar -->

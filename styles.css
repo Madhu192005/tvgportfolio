@@ -2625,3 +2625,336 @@ h1, h2, h3, h4, h5, h6 {
     right: -0.5rem;
   }
 }
+
+
+/* ==========================================================================
+   Welcome Intro Screen (Splash Entrance)
+   ========================================================================== */
+.welcome-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  background: radial-gradient(circle at 50% 35%, #ffffff 0%, #f1f5f9 60%, #e2e8f0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.55s ease;
+  user-select: none;
+}
+
+[data-theme="dark"] .welcome-screen {
+  background: radial-gradient(circle at 50% 35%, #1e293b 0%, #0f172a 70%, #020617 100%);
+}
+
+.welcome-screen.fade-out {
+  opacity: 0;
+  transform: scale(1.04);
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Ambient Floating Mathematical Glyphs */
+.welcome-backdrop-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.w-particle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.35;
+}
+
+.w-p1 {
+  width: 400px;
+  height: 400px;
+  background: #bfdbfe;
+  top: -100px;
+  left: 10%;
+}
+
+.w-p2 {
+  width: 380px;
+  height: 380px;
+  background: #ddd6fe;
+  bottom: -80px;
+  right: 10%;
+}
+
+.w-p3 {
+  width: 280px;
+  height: 280px;
+  background: #bbf7d0;
+  top: 40%;
+  right: 35%;
+}
+
+.w-math-symbol {
+  position: absolute;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--accent-primary);
+  opacity: 0.12;
+  user-select: none;
+  animation: floatMathSymbol 8s ease-in-out infinite alternate;
+}
+
+.w-m1 { font-size: 5rem; top: 12%; left: 8%; animation-delay: 0s; }
+.w-m2 { font-size: 4.5rem; bottom: 15%; left: 14%; animation-delay: 2s; }
+.w-m3 { font-size: 2.2rem; top: 18%; right: 12%; animation-delay: 1s; font-family: var(--font-mono); }
+.w-m4 { font-size: 2.5rem; bottom: 18%; right: 10%; animation-delay: 3s; font-family: var(--font-mono); }
+
+@keyframes floatMathSymbol {
+  0% { transform: translateY(0px) rotate(0deg); }
+  100% { transform: translateY(-25px) rotate(6deg); }
+}
+
+/* Welcome Card Layout */
+.welcome-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+  max-width: 960px;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  animation: welcomeCardEntrance 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes welcomeCardEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(35px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Standing Avatar Box */
+.welcome-avatar-box {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.welcome-avatar-glow {
+  position: absolute;
+  bottom: 10px;
+  width: 80%;
+  height: 40px;
+  background: radial-gradient(ellipse at center, rgba(59, 130, 246, 0.45), transparent 70%);
+  filter: blur(14px);
+  z-index: 1;
+}
+
+.welcome-standing-avatar {
+  max-height: 540px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 25px 35px rgba(15, 23, 42, 0.22));
+  animation: welcomeAvatarFloat 4.5s ease-in-out infinite;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.welcome-card:hover .welcome-standing-avatar {
+  transform: scale(1.03) translateY(-4px);
+}
+
+@keyframes welcomeAvatarFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Speech Card */
+.welcome-content-box {
+  position: relative;
+  max-width: 440px;
+}
+
+.welcome-speech-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: 24px;
+  padding: 2.25rem;
+  box-shadow: var(--shadow-xl);
+  position: relative;
+  backdrop-filter: blur(12px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.welcome-card:hover .welcome-speech-card {
+  box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.25);
+  transform: translateY(-2px);
+}
+
+.welcome-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  font-size: 0.775rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: var(--pastel-lavender-bg);
+  color: var(--pastel-lavender-text);
+  border: 1px solid var(--pastel-lavender-border);
+  margin-bottom: 1rem;
+}
+
+.welcome-pulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--pastel-lavender-text);
+  animation: pulseDot 2s infinite;
+}
+
+.welcome-greeting {
+  font-family: var(--font-serif);
+  font-size: 2.35rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary);
+  margin-bottom: 0.65rem;
+}
+
+.welcome-subtitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  margin-bottom: 0.45rem;
+  line-height: 1.4;
+}
+
+.welcome-affiliation {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 1.75rem;
+}
+
+.welcome-cta-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.btn-welcome-cta {
+  font-size: 1rem;
+  padding: 0.95rem 1.85rem;
+  background: var(--gradient-accent);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.45);
+  animation: ctaGlowPulse 2.5s infinite;
+}
+
+.btn-welcome-cta i {
+  transition: transform 0.2s ease;
+}
+
+.welcome-card:hover .btn-welcome-cta i {
+  transform: translateX(4px);
+}
+
+@keyframes ctaGlowPulse {
+  0%, 100% {
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.45);
+  }
+  50% {
+    box-shadow: 0 8px 30px rgba(139, 92, 246, 0.75);
+  }
+}
+
+.welcome-tip {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+/* ==========================================================================
+   Responsive Adaptations for Welcome Screen
+   ========================================================================== */
+@media (max-width: 860px) {
+  .welcome-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+    padding: 1.25rem;
+    max-height: 95vh;
+  }
+
+  .welcome-standing-avatar {
+    max-height: 44vh;
+  }
+
+  .welcome-content-box {
+    max-width: 480px;
+  }
+
+  .welcome-speech-card {
+    padding: 1.35rem 1.65rem;
+    border-radius: 20px;
+  }
+
+  .welcome-greeting {
+    font-size: 1.85rem;
+  }
+
+  .welcome-affiliation {
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-standing-avatar {
+    max-height: 38vh;
+  }
+
+  .welcome-speech-card {
+    padding: 1.15rem 1.25rem;
+  }
+
+  .welcome-greeting {
+    font-size: 1.55rem;
+  }
+
+  .welcome-subtitle {
+    font-size: 0.875rem;
+  }
+
+  .btn-welcome-cta {
+    padding: 0.8rem 1.35rem;
+    font-size: 0.925rem;
+  }
+}

@@ -4,6 +4,7 @@
 // ==========================================================================
 
 document.addEventListener('DOMContentLoaded', () => {
+  initWelcomeScreen();
   initTheme();
   initMobileMenu();
   initScrollProgressBar();
@@ -906,4 +907,78 @@ function initAiChatBot() {
     div.textContent = text;
     return div.innerHTML;
   }
+}
+
+
+// --------------------------------------------------------------------------
+// 16. Interactive Welcome Intro Screen
+// Shows standing portrait of Dr. Shri Prakash with "Click me to explore more"
+// --------------------------------------------------------------------------
+function initWelcomeScreen() {
+  const welcomeScreen = document.getElementById('welcomeScreen');
+  const enterBtn = document.getElementById('enterPortfolioBtn');
+  const welcomeCard = document.getElementById('welcomeCard');
+
+  if (!welcomeScreen) return;
+
+  // Prevent background scrolling while welcome screen is active
+  document.body.style.overflow = 'hidden';
+
+  let hasEntered = false;
+
+  function dismissWelcome() {
+    if (hasEntered) return;
+    hasEntered = true;
+
+    welcomeScreen.classList.add('fade-out');
+    document.body.style.overflow = '';
+
+    setTimeout(() => {
+      welcomeScreen.style.display = 'none';
+      // Trigger stat counter animations
+      const statsContainer = document.querySelector('.hero-stats');
+      if (statsContainer && typeof initCounterAnimation === 'function') {
+        const statNumbers = document.querySelectorAll('.stat-number[data-target]');
+        statNumbers.forEach(elem => {
+          const target = parseInt(elem.getAttribute('data-target'), 10);
+          const hasPlus = elem.innerHTML.includes('+');
+          let current = 0;
+          const duration = 1200;
+          const startTime = performance.now();
+
+          function step(now) {
+            const progress = Math.min((now - startTime) / duration, 1);
+            const easedProgress = 1 - Math.pow(1 - progress, 3);
+            current = Math.floor(easedProgress * target);
+            elem.innerHTML = `${current}${hasPlus ? '<small>+</small>' : ''}`;
+            if (progress < 1) {
+              requestAnimationFrame(step);
+            } else {
+              elem.innerHTML = `${target}${hasPlus ? '<small>+</small>' : ''}`;
+            }
+          }
+          requestAnimationFrame(step);
+        });
+      }
+    }, 550);
+  }
+
+  // Dismiss handlers
+  if (enterBtn) {
+    enterBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dismissWelcome();
+    });
+  }
+
+  if (welcomeCard) {
+    welcomeCard.addEventListener('click', dismissWelcome);
+  }
+
+  // Keyboard accessibility (Enter, Space, Escape)
+  window.addEventListener('keydown', (e) => {
+    if (!hasEntered && (e.key === 'Enter' || e.key === ' ' || e.key === 'Escape')) {
+      dismissWelcome();
+    }
+  });
 }
