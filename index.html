@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. T.V.G. Shri Prakash | Associate Professor of Mathematics</title>
+  <meta name="description" content="Academic Portfolio of Dr. T.V.G. Shri Prakash - Ph.D in Graph Theory, 21+ Years Experience in Higher Mathematics Education, Life Member Ramanujan Mathematical Society.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="light">
+  <!-- Accessibility: Skip to Content Link -->
+  <a href="#about" class="skip-to-content">Skip to Main Content</a>
+  <!-- Reading Scroll Progress Bar -->
+  <div id="scrollProgressBar" class="scroll-progress-bar"></div>
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <div class="avatar-mini">
+          <span>SP</span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Dr. T.V.G. Shri Prakash</span>
+          <span class="brand-title">Mathematics Educator &amp; Researcher</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#research" class="nav-link">Publications</a>
+        <a href="#teaching" class="nav-link">Teaching</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#conferences" class="nav-link">Conferences</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="openAiChatNav" class="btn btn-pastel-ai btn-sm btn-ai-nav" title="Ask Dr. Shri Prakash's AI Companion"><i class="fa-solid fa-wand-magic-sparkles"></i> <span>Ask AI</span></button>
+        <button id="theme-toggle" class="btn-icon" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button onclick="window.print()" class="btn btn-outline btn-sm print-btn" title="Print or save CV as PDF">
+          <i class="fa-solid fa-print"></i> <span>Print CV</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-background-shapes">
+      <canvas id="graphCanvas" class="hero-canvas"></canvas>
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="math-grid-overlay"></div>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="badge-pill hero-badge">
+          <span class="pulse-dot"></span>
+          <span>Ph.D in Graph Theory &bull; Ramanujan Mathematical Society Life Member</span>
+        </div>
+
+        <h1 class="hero-name">
+          Dr. T.V.G. <span class="text-gradient">Shri Prakash</span>
+        </h1>
+        <p class="hero-degrees">M.Sc., M.Phil., B.Ed., Ph.D.</p>
+
+        <h2 class="hero-role">
+          Associate Professor of Mathematics
+        </h2>
+
+        <p class="hero-institution">
+          <i class="fa-solid fa-graduation-cap icon-pastel-blue"></i>
+          <span>Sri Meenakshi Vidiyal Arts and Science College, Tiruchirappalli</span>
+        </p>
+
+        <p class="hero-past">
+          <i class="fa-solid fa-building-columns icon-pastel-purple"></i>
+          <span>Former Assistant Professor at <strong>SASTRA University</strong> (9 Years)</span>
+        </p>
+
+        <p class="hero-bio">
+          Dedicated mathematical academician with over <strong>21 years of pedagogical excellence</strong>, specializing in Graph Theory, S-Valued Graphs, Differential Equations, and Sequence Spaces. Passionate about empowering students through rigorous analytical thinking and collaborative research.
+        </p>
+
+        <!-- Key Metrics Cards -->
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-number" data-target="21">0<small>+</small></span>
+            <span class="stat-label">Years Experience</span>
+            <span class="stat-sub">16+ Yrs Higher Education</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="11">0</span>
+            <span class="stat-label">Journal Papers</span>
+            <span class="stat-sub">Peer-Reviewed International</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="11">0</span>
+            <span class="stat-label">Conferences</span>
+            <span class="stat-sub">National &amp; International</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="8">0<small>+</small></span>
+            <span class="stat-label">Advanced Courses</span>
+            <span class="stat-sub">UG &amp; PG Engineering/Science</span>
+          </div>
+        </div>
+
+        <!-- Hero Actions -->
+        <div class="hero-cta">
+          <a href="#research" class="btn btn-primary">
+            <i class="fa-solid fa-book-open"></i> Explore Publications
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fa-solid fa-envelope"></i> Get In Touch
+          </a>
+          <a href="#teaching" class="btn btn-ghost">
+            <i class="fa-solid fa-chalkboard-user"></i> Teaching Portfolio
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Photo Card -->
+      <div class="hero-image-wrapper">
+        <div class="photo-frame">
+          <div class="photo-glow"></div>
+          <div class="photo-border-decorator"></div>
+          <img src="assets/profile.jpg" alt="Dr. T.V.G. Shri Prakash" class="profile-photo" id="profile-img">
+          
+          <div class="photo-floating-card top-right-card">
+            <i class="fa-solid fa-award"></i>
+            <div>
+              <strong>Ph.D Scholar</strong>
+              <span>Madurai Kamaraj Univ</span>
+            </div>
+          </div>
+
+          <div class="photo-floating-card bottom-left-card">
+            <i class="fa-solid fa-circle-nodes"></i>
+            <div>
+              <strong>Specialization</strong>
+              <span>S-Valued Graph Theory</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Research Philosophy -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Profile Overview</span>
+        <h2 class="section-title">Academic &amp; Research Philosophy</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">
+          Bridging pure mathematical theories with intuitive teaching to inspire the next generation of scientists and engineers.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card main-objective-card">
+          <div class="about-icon-badge bg-pastel-lavender">
+            <i class="fa-solid fa-compass"></i>
+          </div>
+          <h3>Professional Objective</h3>
+          <p class="lead-quote">
+            &ldquo;A challenging, research-oriented career in the field of teaching which enhances my interest to learn more and enables me to contribute the acquired knowledge to the organization&rsquo;s growth optimistically.&rdquo;
+          </p>
+          <div class="objective-highlights">
+            <div class="highlight-item">
+              <i class="fa-solid fa-check-circle icon-pastel-green"></i>
+              <span>Fostering mathematical intuition through real-world engineering and computational applications</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-check-circle icon-pastel-green"></i>
+              <span>Continuous research in discrete mathematics, semiring valuations, chromatic parameters, and sequence topology</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-check-circle icon-pastel-green"></i>
+              <span>Comprehensive mentorship for undergraduate, postgraduate, and engineering scholars</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-card research-domains-card">
+          <div class="about-icon-badge bg-pastel-blue">
+            <i class="fa-solid fa-microscope"></i>
+          </div>
+          <h3>Core Research Domains</h3>
+          <div class="domains-list">
+            <div class="domain-box">
+              <div class="domain-head">
+                <i class="fa-solid fa-diagram-project"></i>
+                <h4>Graph Theory &amp; S-Valued Graphs</h4>
+              </div>
+              <p>Specializing in S-valued graphs, coloring algorithms, chromatic index, critical graphs, and extended versions of Vizing&rsquo;s Theorem over algebraic semirings.</p>
+            </div>
+
+            <div class="domain-box">
+              <div class="domain-head">
+                <i class="fa-solid fa-wave-square"></i>
+                <h4>Differential Equations &amp; Applied Calculus</h4>
+              </div>
+              <p>Analysis of ordinary and partial differential equations, boundary-value problems, transform methods, and engineering simulations.</p>
+            </div>
+
+            <div class="domain-box">
+              <div class="domain-head">
+                <i class="fa-solid fa-infinity"></i>
+                <h4>Sequence Spaces &amp; Metric Analysis</h4>
+              </div>
+              <p>Investigating triple sequence spaces, modulus functions, lacunary statistical convergence over probabilistic p-metric spaces, and Musielak-Orlicz functions.</p>
+            </div>
+
+            <div class="domain-box">
+              <div class="domain-head">
+                <i class="fa-solid fa-cubes"></i>
+                <h4>Algebra &amp; Discrete Structures</h4>
+              </div>
+              <p>Modern algebra, group representations, semiring theory, combinatorial structures, and discrete mathematics for computation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academic Experience Timeline -->
+  <section class="section experience-section bg-pastel-surface" id="experience">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Career History</span>
+        <h2 class="section-title">21+ Years of Academic Experience</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">
+          A distinguished journey spanning 16+ years in higher education (universities &amp; engineering institutes) and 5 years in foundational mathematics teaching.
+        </p>
+      </div>
+
+      <!-- Experience Filter Tabs -->
+      <div class="filter-controls">
+        <button class="filter-btn active" data-exp-filter="all">All Roles (11)</button>
+        <button class="filter-btn" data-exp-filter="higher-ed">Universities &amp; Engineering (4)</button>
+        <button class="filter-btn" data-exp-filter="arts-sci">Arts &amp; Science Colleges (2)</button>
+        <button class="filter-btn" data-exp-filter="school">Schools &amp; Foundation (5)</button>
+      </div>
+
+      <!-- Timeline Structure -->
+      <div class="timeline" id="experience-timeline">
+
+        <!-- 1. Sri Meenakshi Vidiyal Arts and Science College -->
+        <div class="timeline-item" data-category="arts-sci">
+          <div class="timeline-dot current"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-badge badge-current">Current Position</span>
+              <span class="timeline-period">2019 &ndash; Present</span>
+            </div>
+            <h3 class="timeline-role">Associate Professor of Mathematics</h3>
+            <h4 class="timeline-org">Sri Meenakshi Vidiyal Arts and Science College</h4>
+            <p class="timeline-loc"><i class="fa-solid fa-location-dot"></i> Tiruchirappalli, Tamil Nadu</p>
+            <p class="timeline-desc">
+              Guiding graduate and undergraduate students in Pure and Applied Mathematics. Leading departmental seminars, curriculum design, and research mentorship in Discrete Mathematics and Graph Theory.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. Mahalakshmi Engineering College -->
+        <div class="timeline-item" data-category="higher-ed">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-badge badge-engg">Engineering College</span>
+              <span class="timeline-period">2018 &ndash; 2019 (8 Months)</span>
+            </div>
+            <h3 class="timeline-role">Assistant Professor of Mathematics</h3>
+            <h4 class="timeline-org">Mahalakshmi Engineering College</h4>
+            <p class="timeline-loc"><i class="fa-solid fa-location-dot"></i> Tiruchirappalli, Tamil Nadu</p>
+            <p class="timeline-desc">
+              Taught core Engineering Mathematics courses (Differential Equations, Transforms, Linear Algebra) to undergraduate engineering cohorts.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Kurinji College of Engineering & Technology -->
+        <div class="timeline-item" data-category="higher-ed">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-badge badge-engg">Engineering College</span>
+              <span class="timeline-period">2016 &ndash; 2018 (2 Years)</span>
+            </div>
+            <h3 class="timeline-role">Assistant Professor of Mathematics</h3>
+            <h4 class="timeline-org">Kurinji College of Engineering &amp; Technology</h4>
+            <p class="timeline-loc"><i class="fa-solid fa-location-dot"></i> Manapparai, Tiruchirappalli</p>
+            <p class="timeline-desc">
+              Instructed Engineering Mathematics, Probability &amp; Queuing Theory, and Numerical Methods. Mentored students for technical competitive examinations.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. SASTRA University -->
+        <div class="timeline-item" data-category="higher-ed">
+          <div class="timeline-dot highlight-dot"></div>
+          <div class="timeline-content highlight-content">
+            <div class="timeline-header">
+              <span class="timeline-badge badge-university">Premier Deemed University (9 Years)</span>
+              <span class="timeline-period">2007 &ndash; 2016</span>
+            </div>
+            <h3 class="timeline-role">Assistant Professor of Mathematics</h3>
+            <h4 class="timeline-org">SASTRA Deemed University</h4>
+            <p class="timeline-loc"><i class="fa-solid fa-location-dot"></i> Thanjavur / Kumbakonam Campus, Tamil Nadu</p>
+            <p class="timeline-desc">
+              Rendered 9 continuous years of high-impact service at one of India&rsquo;s premier deemed universities. Handled advanced courses including Random Processes, Numerical Methods, Graph Theory, and Engineering Mathematics I&ndash;III. Actively published international research papers and participated in conferences on Srinivasa Ramanujan&rsquo;s Legacy.
+            </p>
+          </div>
+        </div>
+
+        <!-- 5. King Group of Institutions -->
+        <div class="timeline-item" data-category="higher-ed">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-badge">Engineering &amp; Technical</span>
+              <span class="timeline-period">2006 &ndash; 2007 (1 Year)</span>
+            </div>
+            <h3 class="timeline-role">Lecturer in Mathematics</h3>
+            <h4 class="timeline-org">King Group of Institutions</h4>
+            <p class="timeline-loc"><i class="fa-solid fa-location-dot"></i> Tamil Nadu</p>
+            <p class="timeline-desc">
+              Delivered foundational engineering mathematics modules and facilitated tutorial problem-solving sessions.
+            </p>
+          </div>
+        </div>
+
+        <!-- 6. Boys Hr Sec School, Srirangam -->
+        <div class="timeline-item" data-category="school">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-badge badge-school">Higher Secondary</span>
+              <span class="timeline-period">2004 &ndash; 2006 (2 Years)</span>
+            </div>
+            <h3 class="timeline-role">Mathematics Teacher</h3>
+            <h4 class="timeline-org">Boys Higher Secondary School</h4>
+            <p class="timeline-loc"><i class="fa-solid fa-location-dot"></i> Srirangam, Trichy</p>
+            <p class="timeline-desc">
+              Taught +1 and +2 Mathematics curricula, strengthening students&rsquo; foundational understanding of calculus and algebra for board and competitive exams.
+            </p>
+          </div>
+        </div>
+
+        <!-- 7. ER Hr Sec School -->
+        <div class="timeline-item" data-category="school">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-badge badge-school">Higher Secondary</span>
+              <span class="timeline-period">2002 &ndash; 2004 (2 Years)</span>
+            </div>
+            <h3 class="timeline-role">Mathematics Teacher</h3>
+            <h4 class="timeline-org">E.R. Higher Secondary School</h4>
+            <p class="timeline-loc"><i class="fa-solid fa-location-dot"></i> Tiruchirappalli, Tamil Nadu</p>
+            <p class="timeline-desc">
+              Handled higher secondary mathematics with consistent excellent academic results.
+            </p>
+          </div>
+        </div>
+
+        <!-- 8. Dr RKS College -->
+        <div class="timeline-item" data-category="arts-sci">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-badge">Collegiate Teaching</span>
+              <span class="timeline-period">2001 &ndash; 2002 (1 Year)</span>
+            </div>
+            <h3 class="timeline-role">Teacher / Lecturer in Mathematics</h3>
+            <h4 class="timeline-org">Dr. RKS College of Arts and Science</h4>
+            <p class="timeline-loc"><i class="fa-solid fa-location-dot"></i> Tamil Nadu</p>
+            <p class="timeline-desc">
+              Conducted lectures in core undergraduate mathematics and differential calculus.
+            </p>
+          </div>
+        </div>
+
+        <!-- 9. National College (Day & Evening) -->
+        <div class="timeline-item" data-category="arts-sci">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-badge">Autonomous College</span>
+              <span class="timeline-period">1999 &ndash; 2001 (2 Years)</span>
+            </div>
+            <h3 class="timeline-role">Teacher / Faculty in Mathematics</h3>
+            <h4 class="timeline-org">National College (Day &amp; Evening Sessions)</h4>
+            <p class="timeline-loc"><i class="fa-solid fa-location-dot"></i> Tiruchirappalli, Tamil Nadu</p>
+            <p class="timeline-desc">
+              Served both day and evening collegiate programs, teaching algebra, trigonometry, and calculus.
+            </p>
+          </div>
+        </div>
+
+        <!-- 10. U.D.V. Hr Sec School -->
+        <div class="timeline-item" data-category="school">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-badge badge-school">Higher Secondary</span>
+              <span class="timeline-period">1999 &ndash; 2000 (1 Year)</span>
+            </div>
+            <h3 class="timeline-role">Mathematics Teacher</h3>
+            <h4 class="timeline-org">U.D.V. Higher Secondary School</h4>
+            <p class="timeline-loc"><i class="fa-solid fa-location-dot"></i> Tamil Nadu</p>
+            <p class="timeline-desc">
+              Early teaching appointment imparting foundational analytical and geometry skills to young students.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Research & Publications Section -->
+  <section class="section publications-section" id="research">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Scholarly Contributions</span>
+        <h2 class="section-title">Research Publications (11 Papers)</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">
+          Peer-reviewed articles published across international mathematics journals, featuring pioneering results in S-Valued Graphs, Chromaticity, and Sequence Spaces.
+        </p>
+      </div>
+
+      <!-- Search & Category Filters -->
+      <div class="pub-filter-bar">
+        <div class="pub-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="pubSearchInput" placeholder="Search by paper title, journal, topic, or keyword (e.g. Vizing, Coloring, Lacunary)...">
+          <button id="clearPubSearch" class="btn-clear" title="Clear search"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="pub-category-tabs">
+          <button class="pub-tab active" data-filter="all">All Papers (11)</button>
+          <button class="pub-tab" data-filter="graph-theory">Graph Theory &amp; S-Valued (7)</button>
+          <button class="pub-tab" data-filter="sequence-spaces">Sequence Spaces &amp; Metric (4)</button>
+        </div>
+      </div>
+
+      <!-- Publications List -->
+      <div class="publications-list" id="publicationsList">
+
+        <!-- Paper 1 -->
+        <article class="pub-card" data-category="graph-theory" data-keywords="colouring s-valued graphs ijpam chandramouleeswaran graph theory 2017">
+          <div class="pub-card-header">
+            <div class="pub-meta">
+              <span class="pub-badge badge-gt">Graph Theory</span>
+              <span class="pub-year"><i class="fa-regular fa-calendar"></i> 2017</span>
+            </div>
+            <div class="pub-actions">
+              <button class="btn-action-icon ai-explain-btn" data-paper-id="paper-1" title="AI Plain-English Summary"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Summary</button>
+              <button class="btn-action-icon copy-citation-btn" data-citation="Shriprakash, T.V.G. &amp; Chandramouleeswaran, M. (2017). Colouring of S-valued graphs. International Journal of Pure and Applied Mathematics (IJPAM), Vol. 112, No. 5, pp. 123-129." title="Copy Citation">
+                <i class="fa-regular fa-copy"></i> Copy Citation
+              </button>
+              <button class="btn-action-icon bibtex-btn" data-bibtex="@article{shriprakash2017colouring,&#10;  title={Colouring of S-valued graphs},&#10;  author={Shriprakash, T. V. G. and Chandramouleeswaran, M.},&#10;  journal={International Journal of Pure and Applied Mathematics (IJPAM)},&#10;  volume={112},&#10;  number={5},&#10;  pages={123--129},&#10;  year={2017}&#10;}" title="View BibTeX">
+                <i class="fa-solid fa-code"></i> BibTeX
+              </button>
+            </div>
+          </div>
+          <h3 class="pub-title">Colouring of S-Valued Graphs</h3>
+          <p class="pub-authors">
+            <strong>Shriprakash, T.V.G.</strong> and Chandramouleeswaran, M.
+          </p>
+          <p class="pub-journal">
+            <i class="fa-solid fa-book-journal-whills"></i> 
+            <em>International Journal of Pure and Applied Mathematics (IJPAM)</em>, Vol. 112(5), pp. 123&ndash;129 (2017)
+          </p>
+          <p class="pub-abstract">
+            Investigates proper vertex colorings of graphs whose vertex/edge weights take values from an algebraic semiring S, establishing conditions under which valid colorings exist.
+          </p>
+        </article>
+
+        <!-- Paper 2 -->
+        <article class="pub-card" data-category="graph-theory" data-keywords="k-colourable on s-valued graphs ijmsea chandramouleeswaran 2017">
+          <div class="pub-card-header">
+            <div class="pub-meta">
+              <span class="pub-badge badge-gt">Graph Theory</span>
+              <span class="pub-year"><i class="fa-regular fa-calendar"></i> 2017</span>
+            </div>
+            <div class="pub-actions">
+              <button class="btn-action-icon ai-explain-btn" data-paper-id="paper-2" title="AI Plain-English Summary"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Summary</button>
+              <button class="btn-action-icon copy-citation-btn" data-citation="Shriprakash, T.V.G. &amp; Chandramouleeswaran, M. (2017). K-Colourable on S-valued graphs. International Journal of Mathematical Sciences and Engineering Applications (IJMSEA), Vol. 11, No. 1, pp. 151-157." title="Copy Citation">
+                <i class="fa-regular fa-copy"></i> Copy Citation
+              </button>
+              <button class="btn-action-icon bibtex-btn" data-bibtex="@article{shriprakash2017kcolourable,&#10;  title={K-Colourable on S-valued graphs},&#10;  author={Shriprakash, T. V. G. and Chandramouleeswaran, M.},&#10;  journal={International Journal of Mathematical Sciences and Engineering Applications (IJMSEA)},&#10;  volume={11},&#10;  number={1},&#10;  pages={151--157},&#10;  year={2017}&#10;}" title="View BibTeX">
+                <i class="fa-solid fa-code"></i> BibTeX
+              </button>
+            </div>
+          </div>
+          <h3 class="pub-title">K-Colourable on S-Valued Graphs</h3>
+          <p class="pub-authors">
+            <strong>Shriprakash, T.V.G.</strong> and Chandramouleeswaran, M.
+          </p>
+          <p class="pub-journal">
+            <i class="fa-solid fa-book-journal-whills"></i> 
+            <em>International Journal of Mathematical Sciences and Engineering Applications (IJMSEA)</em>, Vol. 11(1), pp. 151&ndash;157 (2017)
+          </p>
+          <p class="pub-abstract">
+            Extends the concept of k-colorability to graphs weighted with semiring elements, characterizing the boundary conditions for k-partite partitionability under algebraic valuations.
+          </p>
+        </article>
+
+        <!-- Paper 3 -->
+        <article class="pub-card" data-category="graph-theory" data-keywords="chromatic number of some s-valued graphs international journal of engineering science invention ijesi 2017">
+          <div class="pub-card-header">
+            <div class="pub-meta">
+              <span class="pub-badge badge-gt">Graph Theory</span>
+              <span class="pub-year"><i class="fa-regular fa-calendar"></i> 2017</span>
+            </div>
+            <div class="pub-actions">
+              <button class="btn-action-icon ai-explain-btn" data-paper-id="paper-3" title="AI Plain-English Summary"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Summary</button>
+              <button class="btn-action-icon copy-citation-btn" data-citation="Shriprakash, T.V.G. &amp; Chandramouleeswaran, M. (2017). Chromatic number of some S-valued graphs. International Journal of Engineering Science Invention (IJESI), Vol. 6, No. 8, pp. 29-33." title="Copy Citation">
+                <i class="fa-regular fa-copy"></i> Copy Citation
+              </button>
+              <button class="btn-action-icon bibtex-btn" data-bibtex="@article{shriprakash2017chromatic,&#10;  title={Chromatic number of some S-valued graphs},&#10;  author={Shriprakash, T. V. G. and Chandramouleeswaran, M.},&#10;  journal={International Journal of Engineering Science Invention (IJESI)},&#10;  volume={6},&#10;  number={8},&#10;  pages={29--33},&#10;  year={2017}&#10;}" title="View BibTeX">
+                <i class="fa-solid fa-code"></i> BibTeX
+              </button>
+            </div>
+          </div>
+          <h3 class="pub-title">Chromatic Number of Some S-Valued Graphs</h3>
+          <p class="pub-authors">
+            <strong>Shriprakash, T.V.G.</strong> and Chandramouleeswaran, M.
+          </p>
+          <p class="pub-journal">
+            <i class="fa-solid fa-book-journal-whills"></i> 
+            <em>International Journal of Engineering Science Invention (IJESI)</em>, Vol. 6(8), pp. 29&ndash;33 (2017)
+          </p>
+          <p class="pub-abstract">
+            Computes exact chromatic numbers for fundamental graph families (cycles, wheels, complete bipartite graphs) evaluated under diverse semiring structures.
+          </p>
+        </article>
+
+        <!-- Paper 4 -->
+        <article class="pub-card" data-category="graph-theory" data-keywords="critical graphs of s-valued graphs international journal of current advanced research ijcar 2017">
+          <div class="pub-card-header">
+            <div class="pub-meta">
+              <span class="pub-badge badge-gt">Graph Theory</span>
+              <span class="pub-year"><i class="fa-regular fa-calendar"></i> 2017</span>
+            </div>
+            <div class="pub-actions">
+              <button class="btn-action-icon ai-explain-btn" data-paper-id="paper-4" title="AI Plain-English Summary"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Summary</button>
+              <button class="btn-action-icon copy-citation-btn" data-citation="Shriprakash, T.V.G. &amp; Chandramouleeswaran, M. (2017). Critical graphs of S-valued graphs. International Journal of Current Advanced Research (IJCAR), Vol. 6, No. 8, pp. 5654-5656." title="Copy Citation">
+                <i class="fa-regular fa-copy"></i> Copy Citation
+              </button>
+              <button class="btn-action-icon bibtex-btn" data-bibtex="@article{shriprakash2017critical,&#10;  title={Critical graphs of S-valued graphs},&#10;  author={Shriprakash, T. V. G. and Chandramouleeswaran, M.},&#10;  journal={International Journal of Current Advanced Research (IJCAR)},&#10;  volume={6},&#10;  number={8},&#10;  pages={5654--5656},&#10;  year={2017}&#10;}" title="View BibTeX">
+                <i class="fa-solid fa-code"></i> BibTeX
+              </button>
+            </div>
+          </div>
+          <h3 class="pub-title">Critical Graphs of S-Valued Graphs</h3>
+          <p class="pub-authors">
+            <strong>Shriprakash, T.V.G.</strong> and Chandramouleeswaran, M.
+          </p>
+          <p class="pub-journal">
+            <i class="fa-solid fa-book-journal-whills"></i> 
+            <em>International Journal of Current Advanced Research (IJCAR)</em>, Vol. 6(8), pp. 5654&ndash;5656 (2017)
+          </p>
+          <p class="pub-abstract">
+            Defines critical S-valued graphs whose chromatic properties change upon the removal of any vertex or edge, establishing structural minimal invariants.
+          </p>
+        </article>
+
+        <!-- Paper 5 -->
+        <article class="pub-card" data-category="graph-theory" data-keywords="edge coloring of s-valued graphs proceedings of icadm mk university madurai kamaraj 2018 issn 2348-6800">
+          <div class="pub-card-header">
+            <div class="pub-meta">
+              <span class="pub-badge badge-gt">Graph Theory</span>
+              <span class="pub-year"><i class="fa-regular fa-calendar"></i> 2018</span>
+            </div>
+            <div class="pub-actions">
+              <button class="btn-action-icon ai-explain-btn" data-paper-id="paper-5" title="AI Plain-English Summary"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Summary</button>
+              <button class="btn-action-icon copy-citation-btn" data-citation="Shriprakash, T.V.G. &amp; Chandramouleeswaran, M. (2018). Edge Coloring of S-valued graphs. Proceedings of ICADM'18, Madurai Kamaraj University, pp. 434-447. ISSN: 2348-6800." title="Copy Citation">
+                <i class="fa-regular fa-copy"></i> Copy Citation
+              </button>
+              <button class="btn-action-icon bibtex-btn" data-bibtex="@inproceedings{shriprakash2018edge,&#10;  title={Edge Coloring of S-valued graphs},&#10;  author={Shriprakash, T. V. G. and Chandramouleeswaran, M.},&#10;  booktitle={Proceedings of ICADM&#39;18},&#10;  organization={Madurai Kamaraj University},&#10;  pages={434--447},&#10;  year={2018},&#10;  note={ISSN: 2348-6800}&#10;}" title="View BibTeX">
+                <i class="fa-solid fa-code"></i> BibTeX
+              </button>
+            </div>
+          </div>
+          <h3 class="pub-title">Edge Coloring of S-Valued Graphs</h3>
+          <p class="pub-authors">
+            <strong>Shriprakash, T.V.G.</strong> and Chandramouleeswaran, M.
+          </p>
+          <p class="pub-journal">
+            <i class="fa-solid fa-book-journal-whills"></i> 
+            <em>Proceedings of ICADM&rsquo;18, Madurai Kamaraj University</em>, pp. 434&ndash;447 (2018) | <span class="badge-issn">ISSN: 2348-6800</span>
+          </p>
+          <p class="pub-abstract">
+            Comprehensive treatise presented at ICADM&rsquo;18 formalizing the theory of edge colorings in S-valued graphs and defining proper chromatic indices.
+          </p>
+        </article>
+
+        <!-- Paper 6 -->
+        <article class="pub-card" data-category="graph-theory" data-keywords="line graph of s-valued graphs ijmsea chandramouleeswaran 2018">
+          <div class="pub-card-header">
+            <div class="pub-meta">
+              <span class="pub-badge badge-gt">Graph Theory</span>
+              <span class="pub-year"><i class="fa-regular fa-calendar"></i> 2018</span>
+            </div>
+            <div class="pub-actions">
+              <button class="btn-action-icon ai-explain-btn" data-paper-id="paper-6" title="AI Plain-English Summary"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Summary</button>
+              <button class="btn-action-icon copy-citation-btn" data-citation="Shriprakash, T.V.G. &amp; Chandramouleeswaran, M. (2018). Line graph of S-valued graphs. International Journal of Mathematical Sciences and Engineering Applications (IJMSEA), Vol. 12, No. 1, pp. 113-122." title="Copy Citation">
+                <i class="fa-regular fa-copy"></i> Copy Citation
+              </button>
+              <button class="btn-action-icon bibtex-btn" data-bibtex="@article{shriprakash2018line,&#10;  title={Line graph of S-valued graphs},&#10;  author={Shriprakash, T. V. G. and Chandramouleeswaran, M.},&#10;  journal={International Journal of Mathematical Sciences and Engineering Applications (IJMSEA)},&#10;  volume={12},&#10;  number={1},&#10;  pages={113--122},&#10;  year={2018}&#10;}" title="View BibTeX">
+                <i class="fa-solid fa-code"></i> BibTeX
+              </button>
+            </div>
+          </div>
+          <h3 class="pub-title">Line Graph of S-Valued Graphs</h3>
+          <p class="pub-authors">
+            <strong>Shriprakash, T.V.G.</strong> and Chandramouleeswaran, M.
+          </p>
+          <p class="pub-journal">
+            <i class="fa-solid fa-book-journal-whills"></i> 
+            <em>International Journal of Mathematical Sciences and Engineering Applications (IJMSEA)</em>, Vol. 12(1), pp. 113&ndash;122 (2018)
+          </p>
+          <p class="pub-abstract">
+            Explores line graph constructions L(G) where edges carry semiring valuations, mapping edge colorings in original graphs to vertex colorings in dual structures.
+          </p>
+        </article>
+
+        <!-- Paper 7 -->
+        <article class="pub-card" data-category="graph-theory" data-keywords="vizings theorem for s-valued graphs international journal of trend in research and development ijtrd 2018">
+          <div class="pub-card-header">
+            <div class="pub-meta">
+              <span class="pub-badge badge-gt">Graph Theory</span>
+              <span class="pub-year"><i class="fa-regular fa-calendar"></i> 2018</span>
+            </div>
+            <div class="pub-actions">
+              <button class="btn-action-icon ai-explain-btn" data-paper-id="paper-7" title="AI Plain-English Summary"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Summary</button>
+              <button class="btn-action-icon copy-citation-btn" data-citation="Shriprakash, T.V.G. &amp; Chandramouleeswaran, M. (2018). Vizing's Theorem for S-valued graphs. International Journal of Trend in Research and Development (IJTRD), Vol. 5, No. 2, pp. 708-715." title="Copy Citation">
+                <i class="fa-regular fa-copy"></i> Copy Citation
+              </button>
+              <button class="btn-action-icon bibtex-btn" data-bibtex="@article{shriprakash2018vizing,&#10;  title={Vizing&#39;s Theorem for S-valued graphs},&#10;  author={Shriprakash, T. V. G. and Chandramouleeswaran, M.},&#10;  journal={International Journal of Trend in Research and Development (IJTRD)},&#10;  volume={5},&#10;  number={2},&#10;  pages={708--715},&#10;  year={2018}&#10;}" title="View BibTeX">
+                <i class="fa-solid fa-code"></i> BibTeX
+              </button>
+            </div>
+          </div>
+          <h3 class="pub-title">Vizing&rsquo;s Theorem for S-Valued Graphs</h3>
+          <p class="pub-authors">
+            <strong>Shriprakash, T.V.G.</strong> and Chandramouleeswaran, M.
+          </p>
+          <p class="pub-journal">
+            <i class="fa-solid fa-book-journal-whills"></i> 
+            <em>International Journal of Trend in Research and Development (IJTRD)</em>, Vol. 5(2), pp. 708&ndash;715 (2018)
+          </p>
+          <p class="pub-abstract">
+            Proves the generalization of Vizing&rsquo;s celebrated Edge Coloring Theorem for S-valued graphs, bounding the chromatic index in terms of maximum degree &Delta; and semiring valuation properties.
+          </p>
+        </article>
+
+        <!-- Paper 8 -->
+        <article class="pub-card" data-category="sequence-spaces" data-keywords="triple almost lacunary gamma 3 spaces sequence defined by a modulus function international journal of applied engineering research ijaer 2015 issn 0973-4562">
+          <div class="pub-card-header">
+            <div class="pub-meta">
+              <span class="pub-badge badge-seq">Sequence Spaces</span>
+              <span class="pub-year"><i class="fa-regular fa-calendar"></i> 2015</span>
+            </div>
+            <div class="pub-actions">
+              <button class="btn-action-icon ai-explain-btn" data-paper-id="paper-8" title="AI Plain-English Summary"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Summary</button>
+              <button class="btn-action-icon copy-citation-btn" data-citation="International Journal of Applied Engineering Research (2015). The Triple Almost Lacunary 3 Γ Spaces Sequence Defined by a Modulus Function. IJAER, Vol. 10, No. 80. ISSN: 0973-4562." title="Copy Citation">
+                <i class="fa-regular fa-copy"></i> Copy Citation
+              </button>
+              <button class="btn-action-icon bibtex-btn" data-bibtex="@article{shriprakash2015lacunary,&#10;  title={The Triple Almost Lacunary $3\Gamma$ Spaces Sequence Defined by a Modulus Function},&#10;  journal={International Journal of Applied Engineering Research (IJAER)},&#10;  volume={10},&#10;  number={80},&#10;  year={2015},&#10;  note={ISSN: 0973-4562}&#10;}" title="View BibTeX">
+                <i class="fa-solid fa-code"></i> BibTeX
+              </button>
+            </div>
+          </div>
+          <h3 class="pub-title">The Triple Almost Lacunary 3 &Gamma; Spaces Sequence Defined by a Modulus Function</h3>
+          <p class="pub-authors">
+            <em>Co-Authored Research Contribution</em>
+          </p>
+          <p class="pub-journal">
+            <i class="fa-solid fa-book-journal-whills"></i> 
+            <em>International Journal of Applied Engineering Research (IJAER)</em>, Vol. 10(80) (2015) | <span class="badge-issn">ISSN: 0973-4562</span>
+          </p>
+          <p class="pub-abstract">
+            Introduces new classes of triple almost lacunary sequence spaces generated by a modulus function, investigating topological linearity and dual spaces.
+          </p>
+        </article>
+
+        <!-- Paper 9 -->
+        <article class="pub-card" data-category="sequence-spaces" data-keywords="strongly generalized triple difference gamma 3 sequence spaces defined by a modulus mathematica moravica 2016">
+          <div class="pub-card-header">
+            <div class="pub-meta">
+              <span class="pub-badge badge-seq">Sequence Spaces</span>
+              <span class="pub-year"><i class="fa-regular fa-calendar"></i> 2016</span>
+            </div>
+            <div class="pub-actions">
+              <button class="btn-action-icon ai-explain-btn" data-paper-id="paper-9" title="AI Plain-English Summary"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Summary</button>
+              <button class="btn-action-icon copy-citation-btn" data-citation="Mathematica Moravica (2016). The strongly generalized triple difference Γ^3 sequence spaces defined by a modulus. Mathematica Moravica, Vol. 20, No. 1, pp. 115-123." title="Copy Citation">
+                <i class="fa-regular fa-copy"></i> Copy Citation
+              </button>
+              <button class="btn-action-icon bibtex-btn" data-bibtex="@article{shriprakash2016strongly,&#10;  title={The strongly generalized triple difference $\Gamma^3$ sequence spaces defined by a modulus},&#10;  journal={Mathematica Moravica},&#10;  volume={20},&#10;  number={1},&#10;  pages={115--123},&#10;  year={2016}&#10;}" title="View BibTeX">
+                <i class="fa-solid fa-code"></i> BibTeX
+              </button>
+            </div>
+          </div>
+          <h3 class="pub-title">The Strongly Generalized Triple Difference &Gamma;<sup>3</sup> Sequence Spaces Defined by a Modulus</h3>
+          <p class="pub-authors">
+            <em>Co-Authored Research Contribution</em>
+          </p>
+          <p class="pub-journal">
+            <i class="fa-solid fa-book-journal-whills"></i> 
+            <em>Mathematica Moravica</em>, Vol. 20(1), pp. 115&ndash;123 (2016)
+          </p>
+          <p class="pub-abstract">
+            Formulates higher-order difference operators over triple sequence spaces and proves completeness under modulus seminorms.
+          </p>
+        </article>
+
+        <!-- Paper 10 -->
+        <article class="pub-card" data-category="sequence-spaces" data-keywords="the random of lacunary statistical on gamma 3 over p-metric spaces defined by musielak orlicz functions modern applied science ccse canada 2016">
+          <div class="pub-card-header">
+            <div class="pub-meta">
+              <span class="pub-badge badge-seq">Sequence Spaces</span>
+              <span class="pub-year"><i class="fa-regular fa-calendar"></i> 2016</span>
+            </div>
+            <div class="pub-actions">
+              <button class="btn-action-icon ai-explain-btn" data-paper-id="paper-10" title="AI Plain-English Summary"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Summary</button>
+              <button class="btn-action-icon copy-citation-btn" data-citation="Modern Applied Science (2016). The Random of Lacunary Statistical on Γ^3 Over P-Metric Spaces Defined by Musielak-Orlicz Functions. Canadian Center of Science and Education, Vol. 10, No. 1. ISSN: 1913-1844, E-ISSN: 1913-1852." title="Copy Citation">
+                <i class="fa-regular fa-copy"></i> Copy Citation
+              </button>
+              <button class="btn-action-icon bibtex-btn" data-bibtex="@article{shriprakash2016musielak,&#10;  title={The Random of Lacunary Statistical on $\Gamma^3$ Over P-Metric Spaces Defined by Musielak-Orlicz Functions},&#10;  journal={Modern Applied Science (CCSE)},&#10;  volume={10},&#10;  number={1},&#10;  year={2016},&#10;  note={ISSN: 1913-1844}&#10;}" title="View BibTeX">
+                <i class="fa-solid fa-code"></i> BibTeX
+              </button>
+            </div>
+          </div>
+          <h3 class="pub-title">The Random of Lacunary Statistical on &Gamma;<sup>3</sup> Over P-Metric Spaces Defined by Musielak-Orlicz Functions</h3>
+          <p class="pub-authors">
+            <em>Co-Authored Research Contribution</em>
+          </p>
+          <p class="pub-journal">
+            <i class="fa-solid fa-book-journal-whills"></i> 
+            <em>Modern Applied Science (CCSE Canada)</em>, Vol. 10(1) (2016) | <span class="badge-issn">ISSN: 1913-1844</span>
+          </p>
+          <p class="pub-abstract">
+            Extends statistical convergence to random variables in lacunary frameworks, establishing topological properties via generalized Musielak-Orlicz sequences.
+          </p>
+        </article>
+
+        <!-- Paper 11 -->
+        <article class="pub-card" data-category="sequence-spaces" data-keywords="lacunary triple sequence 3 of fibonacci numbers over probabilistic p-metric spaces iosr-jm 2016">
+          <div class="pub-card-header">
+            <div class="pub-meta">
+              <span class="pub-badge badge-seq">Sequence Spaces</span>
+              <span class="pub-year"><i class="fa-regular fa-calendar"></i> 2016</span>
+            </div>
+            <div class="pub-actions">
+              <button class="btn-action-icon ai-explain-btn" data-paper-id="paper-11" title="AI Plain-English Summary"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Summary</button>
+              <button class="btn-action-icon copy-citation-btn" data-citation="IOSR Journal of Mathematics (2016). Lacunary Triple Sequence 3 of Fibonacci Numbers over Probabilistic p-Metric Spaces. IOSR-JM, Vol. 12, Issue 1, Ver. IV, pp. 10-16. e-ISSN: 2278-5728, p-ISSN: 2319-765X." title="Copy Citation">
+                <i class="fa-regular fa-copy"></i> Copy Citation
+              </button>
+              <button class="btn-action-icon bibtex-btn" data-bibtex="@article{shriprakash2016fibonacci,&#10;  title={Lacunary Triple Sequence 3 of Fibonacci Numbers over Probabilistic p-Metric Spaces},&#10;  journal={IOSR Journal of Mathematics (IOSR-JM)},&#10;  volume={12},
+  number={1},&#10;  pages={10--16},&#10;  year={2016}&#10;}" title="View BibTeX">
+                <i class="fa-solid fa-code"></i> BibTeX
+              </button>
+            </div>
+          </div>
+          <h3 class="pub-title">Lacunary Triple Sequence 3 of Fibonacci Numbers over Probabilistic p-Metric Spaces</h3>
+          <p class="pub-authors">
+            <em>Co-Authored Research Contribution</em>
+          </p>
+          <p class="pub-journal">
+            <i class="fa-solid fa-book-journal-whills"></i> 
+            <em>IOSR Journal of Mathematics (IOSR-JM)</em>, Vol. 12(1), Ver. IV, pp. 10&ndash;16 (2016) | <span class="badge-issn">e-ISSN: 2278-5728</span>
+          </p>
+          <p class="pub-abstract">
+            Integrates classical Fibonacci recurrence relations with probabilistic p-metric topology, exploring asymptotic lacunary triple convergence patterns.
+          </p>
+        </article>
+
+      </div>
+
+      <!-- No Results State -->
+      <div id="noPubResults" class="no-results hidden">
+        <i class="fa-solid fa-file-circle-question"></i>
+        <p>No matching publications found for your search query.</p>
+        <button id="resetPubSearch" class="btn btn-sm btn-outline">Reset Filter</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Teaching & Subjects Handled -->
+  <section class="section teaching-section bg-pastel-surface" id="teaching">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Pedagogical Expertise</span>
+        <h2 class="section-title">Courses &amp; Subjects Handled</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">
+          Over two decades of lecturing specialized collegiate and engineering curricula across autonomous colleges and universities.
+        </p>
+      </div>
+
+      <div class="courses-grid">
+        
+        <!-- Course 1 -->
+        <div class="course-card">
+          <div class="course-card-top">
+            <span class="course-code-pill">CORE-ENGG</span>
+            <div class="course-icon bg-pastel-blue">
+              <i class="fa-solid fa-square-root-variable"></i>
+            </div>
+          </div>
+          <h3 class="course-name">Engineering Mathematics - I</h3>
+          <p class="course-desc">
+            Differential calculus, curvature, evolutes, partial differentiation, Jacobians, and matrices with Cayley-Hamilton theorem and quadratic forms.
+          </p>
+          <div class="course-tags">
+            <span>Differential Calculus</span>
+            <span>Matrix Theory</span>
+            <span>Eigenvalues</span>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="course-card">
+          <div class="course-card-top">
+            <span class="course-code-pill">CORE-ENGG</span>
+            <div class="course-icon bg-pastel-lavender">
+              <i class="fa-solid fa-bezier-curve"></i>
+            </div>
+          </div>
+          <h3 class="course-name">Engineering Mathematics - II</h3>
+          <p class="course-desc">
+            Vector calculus (Green&rsquo;s, Stokes&rsquo;, and Gauss divergence theorems), analytic functions, conformal mapping, and complex line integration.
+          </p>
+          <div class="course-tags">
+            <span>Vector Calculus</span>
+            <span>Complex Analysis</span>
+            <span>Laplace Transforms</span>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="course-card">
+          <div class="course-card-top">
+            <span class="course-code-pill">CORE-ENGG</span>
+            <div class="course-icon bg-pastel-mint">
+              <i class="fa-solid fa-water"></i>
+            </div>
+          </div>
+          <h3 class="course-name">Engineering Mathematics - III</h3>
+          <p class="course-desc">
+            Partial differential equations, Fourier series, Fourier transforms, and boundary value problems (one-dimensional wave and heat equations).
+          </p>
+          <div class="course-tags">
+            <span>PDEs</span>
+            <span>Fourier Series</span>
+            <span>Boundary Value Problems</span>
+          </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="course-card">
+          <div class="course-card-top">
+            <span class="course-code-pill">ADV-MATH</span>
+            <div class="course-icon bg-pastel-coral">
+              <i class="fa-solid fa-circle-nodes"></i>
+            </div>
+          </div>
+          <h3 class="course-name">Graph Theory</h3>
+          <p class="course-desc">
+            Fundamental trees, connectivity, Eulerian and Hamiltonian paths, planar graphs, coloring theorems, chromatic polynomial, and network flow algorithms.
+          </p>
+          <div class="course-tags">
+            <span>Graph Coloring</span>
+            <span>Trees &amp; Networks</span>
+            <span>Planarity</span>
+          </div>
+        </div>
+
+        <!-- Course 5 -->
+        <div class="course-card">
+          <div class="course-card-top">
+            <span class="course-code-pill">STOCHASTICS</span>
+            <div class="course-icon bg-pastel-yellow">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+          </div>
+          <h3 class="course-name">Random Processes</h3>
+          <p class="course-desc">
+            Classification of stochastic processes, stationary processes, autocorrelation and cross-correlation, Markov chains, and spectral analysis.
+          </p>
+          <div class="course-tags">
+            <span>Stochastic Systems</span>
+            <span>Markov Chains</span>
+            <span>Spectral Density</span>
+          </div>
+        </div>
+
+        <!-- Course 6 -->
+        <div class="course-card">
+          <div class="course-card-top">
+            <span class="course-code-pill">APPLIED</span>
+            <div class="course-icon bg-pastel-blue">
+              <i class="fa-solid fa-people-arrows"></i>
+            </div>
+          </div>
+          <h3 class="course-name">Probability &amp; Queuing Theory</h3>
+          <p class="course-desc">
+            Discrete and continuous probability distributions, joint distributions, M/M/1, M/M/c queues, finite and infinite capacity networks.
+          </p>
+          <div class="course-tags">
+            <span>Queuing Models</span>
+            <span>Poisson Processes</span>
+            <span>Reliability</span>
+          </div>
+        </div>
+
+        <!-- Course 7 -->
+        <div class="course-card">
+          <div class="course-card-top">
+            <span class="course-code-pill">COMPUTATION</span>
+            <div class="course-icon bg-pastel-lavender">
+              <i class="fa-solid fa-calculator"></i>
+            </div>
+          </div>
+          <h3 class="course-name">Numerical Methods</h3>
+          <p class="course-desc">
+            Solutions of algebraic equations (Newton-Raphson, Gauss elimination), interpolation (Newton/Lagrange), numerical calculus, and initial value ODE solvers.
+          </p>
+          <div class="course-tags">
+            <span>Interpolation</span>
+            <span>Root Finding</span>
+            <span>Runge-Kutta</span>
+          </div>
+        </div>
+
+        <!-- Course 8 -->
+        <div class="course-card">
+          <div class="course-card-top">
+            <span class="course-code-pill">STATISTICS</span>
+            <div class="course-icon bg-pastel-mint">
+              <i class="fa-solid fa-chart-pie"></i>
+            </div>
+          </div>
+          <h3 class="course-name">Statistical &amp; Numerical Methods</h3>
+          <p class="course-desc">
+            Large and small sample tests of hypothesis (t-test, F-test, Chi-square), ANOVA, design of experiments, combined with numerical algorithms.
+          </p>
+          <div class="course-tags">
+            <span>Hypothesis Testing</span>
+            <span>ANOVA</span>
+            <span>Regression Analysis</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Credentials -->
+  <section class="section education-section" id="education">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Academic Qualifications</span>
+        <h2 class="section-title">Education &amp; Credentials</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">
+          Distinguished academic credentials rooted in renowned universities of Tamil Nadu.
+        </p>
+      </div>
+
+      <div class="edu-grid">
+
+        <!-- Ph.D -->
+        <div class="edu-card featured-edu">
+          <div class="edu-year-badge">COMPLETED VIVA VOCE</div>
+          <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3 class="edu-degree">Doctor of Philosophy (Ph.D) in Mathematics</h3>
+          <h4 class="edu-specialization">Specialization: Graph Theory (S-Valued Graphs)</h4>
+          <p class="edu-university">Madurai Kamaraj University</p>
+          <p class="edu-detail">
+            Doctoral research centered on the structural properties, coloring mechanisms, and extended Vizing theorems for S-valued graphs.
+          </p>
+        </div>
+
+        <!-- M.Phil -->
+        <div class="edu-card">
+          <div class="edu-year-badge">Feb 2001</div>
+          <div class="edu-icon"><i class="fa-solid fa-scroll"></i></div>
+          <h3 class="edu-degree">Master of Philosophy (M.Phil) in Mathematics</h3>
+          <h4 class="edu-specialization">National College, Tiruchirappalli</h4>
+          <p class="edu-university">Bharathidasan University</p>
+          <div class="edu-grade-tag">64% &bull; Second Class</div>
+        </div>
+
+        <!-- M.Sc -->
+        <div class="edu-card">
+          <div class="edu-year-badge">Nov 1996</div>
+          <div class="edu-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+          <h3 class="edu-degree">Master of Science (M.Sc) in Mathematics</h3>
+          <h4 class="edu-specialization">National College, Tiruchirappalli</h4>
+          <p class="edu-university">Bharathidasan University</p>
+          <div class="edu-grade-tag highlight-grade">60% &bull; First Class</div>
+        </div>
+
+        <!-- B.Ed -->
+        <div class="edu-card">
+          <div class="edu-year-badge">Nov 1996</div>
+          <div class="edu-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+          <h3 class="edu-degree">Bachelor of Education (B.Ed) in Mathematics</h3>
+          <h4 class="edu-specialization">Distance Education (DDE)</h4>
+          <p class="edu-university">Bharathidasan University</p>
+          <div class="edu-grade-tag highlight-grade">First Class</div>
+        </div>
+
+        <!-- B.Sc -->
+        <div class="edu-card">
+          <div class="edu-year-badge">April 1991</div>
+          <div class="edu-icon"><i class="fa-solid fa-award"></i></div>
+          <h3 class="edu-degree">Bachelor of Science (B.Sc) in Mathematics</h3>
+          <h4 class="edu-specialization">National College, Tiruchirappalli</h4>
+          <p class="edu-university">Bharathidasan University</p>
+          <div class="edu-grade-tag">54% &bull; Second Class</div>
+        </div>
+
+        <!-- Professional Membership -->
+        <div class="edu-card membership-edu">
+          <div class="edu-year-badge badge-lifetime">LIFE MEMBER</div>
+          <div class="edu-icon"><i class="fa-solid fa-certificate"></i></div>
+          <h3 class="edu-degree">Ramanujan Mathematical Society (RMS)</h3>
+          <h4 class="edu-specialization">Life Membership in Professional Body</h4>
+          <p class="edu-university">Premier National Mathematical Association</p>
+          <p class="edu-detail">
+            Actively engaged with national mathematical society initiatives promoting Srinivasa Ramanujan&rsquo;s legacy, conferences, and collaborative research forums.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Conferences, Seminars & Workshops -->
+  <section class="section conferences-section bg-pastel-surface" id="conferences">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Scholarly Engagements</span>
+        <h2 class="section-title">Conferences, Seminars &amp; Workshops Attended (11)</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">
+          Active participation in prestigious national and international forums on Number Theory, Algebraic Geometry, Analysis, and Graph Theory.
+        </p>
+      </div>
+
+      <div class="conferences-grid">
+        
+        <!-- Conf 1 -->
+        <div class="conf-item">
+          <div class="conf-num">01</div>
+          <div class="conf-body">
+            <span class="conf-date">Feb 28 &amp; Mar 1&ndash;2, 2018</span>
+            <h4 class="conf-title">National Conference on Algebra and Its Applications-2018</h4>
+            <p class="conf-venue">Ramanujan Institute for Advanced Study in Mathematics, University of Madras, Chennai</p>
+          </div>
+        </div>
+
+        <!-- Conf 2 -->
+        <div class="conf-item">
+          <div class="conf-num">02</div>
+          <div class="conf-body">
+            <span class="conf-date">Jan 8&ndash;10, 2018</span>
+            <h4 class="conf-title">International Conference on Algebra and Discrete Mathematics (ICADM-2018)</h4>
+            <p class="conf-venue">Madurai Kamaraj University, Madurai</p>
+          </div>
+        </div>
+
+        <!-- Conf 3 -->
+        <div class="conf-item">
+          <div class="conf-num">03</div>
+          <div class="conf-body">
+            <span class="conf-date">Feb 16&ndash;18, 2017</span>
+            <h4 class="conf-title">International Conference on Mathematics and Computer Science-2017</h4>
+            <p class="conf-venue">Jyothi Nivas College (Autonomous), Bangalore, Karnataka</p>
+          </div>
+        </div>
+
+        <!-- Conf 4 -->
+        <div class="conf-item">
+          <div class="conf-num">04</div>
+          <div class="conf-body">
+            <span class="conf-date">Jan 5&ndash;6, 2017</span>
+            <h4 class="conf-title">National Seminar on Advances in Algebra, Analysis and Graph Theory (NSA&sup3;G)</h4>
+            <p class="conf-venue">SBK College, Aruppukottai</p>
+          </div>
+        </div>
+
+        <!-- Conf 5 -->
+        <div class="conf-item">
+          <div class="conf-num">05</div>
+          <div class="conf-body">
+            <span class="conf-date">Dec 21&ndash;22, 2016</span>
+            <h4 class="conf-title">International Conference on &ldquo;Number Theory&rdquo;</h4>
+            <p class="conf-venue">Srinivasa Ramanujan Centre (SRC), Kumbakonam</p>
+          </div>
+        </div>
+
+        <!-- Conf 6 -->
+        <div class="conf-item">
+          <div class="conf-num">06</div>
+          <div class="conf-body">
+            <span class="conf-date">Dec 21&ndash;22, 2015</span>
+            <h4 class="conf-title">International Conference on &ldquo;Number Theory &amp; Algebraic Geometry&rdquo;</h4>
+            <p class="conf-venue">Srinivasa Ramanujan Centre (SRC), Kumbakonam</p>
+          </div>
+        </div>
+
+        <!-- Conf 7 -->
+        <div class="conf-item">
+          <div class="conf-num">07</div>
+          <div class="conf-body">
+            <span class="conf-date">Dec 14&ndash;15, 2012</span>
+            <h4 class="conf-title">International Conference on &ldquo;Legacy of Srinivasa Ramanujan&rdquo;</h4>
+            <p class="conf-venue">Srinivasa Ramanujan Centre (SRC), Kumbakonam</p>
+          </div>
+        </div>
+
+        <!-- Conf 8 -->
+        <div class="conf-item">
+          <div class="conf-num">08</div>
+          <div class="conf-body">
+            <span class="conf-date">Feb 18&ndash;19, 2010</span>
+            <h4 class="conf-title">National Conference on Vedic and Ancient Indian Mathematics</h4>
+            <p class="conf-venue">SASTRA University, Thanjavur</p>
+          </div>
+        </div>
+
+        <!-- Conf 9 -->
+        <div class="conf-item">
+          <div class="conf-num">09</div>
+          <div class="conf-body">
+            <span class="conf-date">Dec 20&ndash;22, 2008</span>
+            <h4 class="conf-title">International Conference on Number Theory and Modular Forms</h4>
+            <p class="conf-venue">Srinivasa Ramanujan Centre (SRC), Kumbakonam</p>
+          </div>
+        </div>
+
+        <!-- Conf 10 -->
+        <div class="conf-item">
+          <div class="conf-num">10</div>
+          <div class="conf-body">
+            <span class="conf-date">Dec 20&ndash;22, 2007</span>
+            <h4 class="conf-title">International Conference on Number Theory, Theoretical Physics &amp; Special Functions</h4>
+            <p class="conf-venue">Srinivasa Ramanujan Centre (SRC), Kumbakonam</p>
+          </div>
+        </div>
+
+        <!-- Conf 11 -->
+        <div class="conf-item">
+          <div class="conf-num">11</div>
+          <div class="conf-body">
+            <span class="conf-date">Faculty Development</span>
+            <h4 class="conf-title">Two Days Workshop on Faculty Development Programme (FDP)</h4>
+            <p class="conf-venue">Sri Meenakshi Vidiyal Arts and Science College, Trichy</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Personal Details Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Contact &amp; Communication</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle">
+          Open for academic collaborations, research discussions, guest lectures, and student mentorship.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info Card -->
+        <div class="contact-info-card">
+          <h3 class="contact-heading">Dr. T.V.G. Shri Prakash</h3>
+          <p class="contact-subhead">Associate Professor of Mathematics</p>
+
+          <div class="contact-details-list">
+            <div class="contact-detail-item">
+              <div class="detail-icon bg-pastel-blue">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="detail-content">
+                <span class="detail-label">Email Address</span>
+                <a href="mailto:tvgshri@gmail.com" class="detail-value">tvgshri@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="detail-icon bg-pastel-green">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="detail-content">
+                <span class="detail-label">Mobile Phone</span>
+                <a href="tel:+919486643582" class="detail-value">+91 94866 43582</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="detail-icon bg-pastel-lavender">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="detail-content">
+                <span class="detail-label">Permanent Residence</span>
+                <p class="detail-value text-address">
+                  B3 Vanajasri Apartments, 34 Ammamandapam Road,<br>
+                  Srirangam, Tiruchirappalli (Trichy) &ndash; 620006,<br>
+                  Tamil Nadu, India.
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="detail-icon bg-pastel-coral">
+                <i class="fa-solid fa-language"></i>
+              </div>
+              <div class="detail-content">
+                <span class="detail-label">Languages Known</span>
+                <span class="detail-value">Tamil &bull; English</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Affiliation Badge -->
+          <div class="affiliation-badge">
+            <i class="fa-solid fa-landmark"></i>
+            <div>
+              <strong>Current Institution:</strong>
+              <span>Sri Meenakshi Vidiyal Arts and Science College, Trichy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Message Form -->
+        <div class="contact-form-card">
+          <div class="form-header">
+            <h3>Send an Academic Message</h3>
+            <p>Fill out this form to quickly send an email regarding research inquiries or guest lectures.</p>
+          </div>
+
+          <form id="contactForm" onsubmit="handleContactSubmit(event)">
+            <div class="form-group">
+              <label for="senderName">Your Name</label>
+              <input type="text" id="senderName" name="name" required placeholder="Dr. / Prof. / Scholar Name">
+            </div>
+
+            <div class="form-group">
+              <label for="senderEmail">Your Email</label>
+              <input type="email" id="senderEmail" name="email" required placeholder="name@institution.edu">
+            </div>
+
+            <div class="form-group">
+              <label for="subjectSelect">Purpose / Subject</label>
+              <select id="subjectSelect" name="subject" required>
+                <option value="Research Inquiry / Graph Theory">Research Inquiry / Graph Theory</option>
+                <option value="Invitation for Guest Lecture / Seminar">Invitation for Guest Lecture / Seminar</option>
+                <option value="Academic Collaboration">Academic Collaboration</option>
+                <option value="Student Guidance &amp; Mentorship">Student Guidance &amp; Mentorship</option>
+                <option value="Other Communication">Other Communication</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="senderMessage">Message</label>
+              <textarea id="senderMessage" name="message" rows="4" required placeholder="Write your message here..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fa-solid fa-paper-plane"></i> Send Email to Dr. Shri Prakash
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BibTeX Modal -->
+  <div id="bibtexModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="modalTitle"><i class="fa-solid fa-code"></i> BibTeX Citation</h3>
+        <button id="closeModalBtn" class="btn-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <pre><code id="bibtexContent"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <button id="copyBibtexBtn" class="btn btn-primary btn-sm">
+          <i class="fa-regular fa-copy"></i> Copy BibTeX
+        </button>
+        <button id="dismissModalBtn" class="btn btn-ghost btn-sm">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="avatar-mini"><span>SP</span></div>
+        <div>
+          <h4>Dr. T.V.G. Shri Prakash</h4>
+          <p>Associate Professor of Mathematics &bull; Ph.D in Graph Theory</p>
+        </div>
+      </div>
+      <div class="footer-center">
+        <p>&copy; <span id="currentYear">2026</span> Dr. T.V.G. Shri Prakash. All rights reserved.</p>
+        <p class="footer-sub">Life Member, Ramanujan Mathematical Society</p>
+      </div>
+      <div class="footer-right">
+        <button onclick="scrollToTop()" class="btn-back-to-top" title="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  
+  <!-- AI Paper Explanation Modal -->
+  <div id="aiSummaryModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="aiModalTitle">
+    <div class="modal-overlay" id="aiModalOverlay"></div>
+    <div class="modal-dialog ai-summary-dialog">
+      <div class="modal-header ai-modal-header">
+        <div class="ai-header-badge">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span>AI Research Explainer &bull; Plain English</span>
+        </div>
+        <button id="closeAiModalBtn" class="btn-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body ai-modal-body">
+        <h3 id="aiModalTitle" class="ai-paper-title">Loading title...</h3>
+        <p id="aiModalAuthors" class="ai-paper-meta">Authors</p>
+        
+        <div class="ai-insight-box">
+          <div class="ai-insight-head">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h4>In Plain Words (What Does This Mean?)</h4>
+          </div>
+          <p id="aiPlainEnglish">Explanation...</p>
+        </div>
+
+        <div class="ai-insight-box">
+          <div class="ai-insight-head">
+            <i class="fa-solid fa-atom"></i>
+            <h4>Key Theoretical Breakthrough</h4>
+          </div>
+          <p id="aiBreakthrough">Breakthrough...</p>
+        </div>
+
+        <div class="ai-insight-box">
+          <div class="ai-insight-head">
+            <i class="fa-solid fa-network-wired"></i>
+            <h4>Real-World & Computational Applications</h4>
+          </div>
+          <p id="aiApplications">Applications...</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="dismissAiModalBtn" class="btn btn-ghost btn-sm">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating AI ScholarBot Widget -->
+  <div class="ai-widget-container" id="aiWidgetContainer">
+    <!-- Chat Toggle Floating Button -->
+    <button id="aiWidgetToggle" class="ai-floating-trigger" aria-label="Open AI Assistant" title="Chat with Dr. Shri Prakash's AI Companion">
+      <div class="ai-trigger-sparkle">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+      </div>
+      <span class="ai-trigger-label">Ask Scholar AI</span>
+      <span class="ai-online-pulse"></span>
+    </button>
+
+    <!-- Floating Chat Window -->
+    <div class="ai-chat-window hidden" id="aiChatWindow" role="dialog" aria-labelledby="chatHeaderTitle">
+      <div class="ai-chat-header">
+        <div class="ai-avatar-online">
+          <div class="ai-avatar-circle">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <span class="online-indicator"></span>
+        </div>
+        <div class="ai-header-info">
+          <h4 id="chatHeaderTitle">Dr. Shri Prakash AI Companion</h4>
+          <p>Instant answers on research, teaching &amp; background</p>
+        </div>
+        <button id="closeAiChatBtn" class="btn-chat-close" aria-label="Close Chat">&times;</button>
+      </div>
+
+      <!-- Quick Suggestion Chips -->
+      <div class="ai-chips-strip">
+        <button class="ai-chip" data-prompt="What is Dr. Shri Prakash's Ph.D research specialization?">?? Graph Theory Research</button>
+        <button class="ai-chip" data-prompt="What courses and engineering subjects does he teach?">?? Subjects Handled</button>
+        <button class="ai-chip" data-prompt="Summarize his 21+ years of academic career.">??? Career History</button>
+        <button class="ai-chip" data-prompt="What is an S-Valued Graph in simple terms?">?? S-Valued Graphs</button>
+        <button class="ai-chip" data-prompt="How can I contact Dr. Shri Prakash for academic collaboration?">?? Collaboration &amp; Contact</button>
+      </div>
+
+      <!-- Messages Stream -->
+      <div class="ai-messages-list" id="aiMessagesList">
+        <div class="ai-message bot-message">
+          <div class="msg-avatar"><i class="fa-solid fa-robot"></i></div>
+          <div class="msg-bubble">
+            <p>Hello! I am Dr. T.V.G. Shri Prakash's <strong>AI Academic Companion</strong>. Ask me anything about his Ph.D research in Graph Theory, 11 published papers, courses, university experience, or how to get in touch!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Input Bar -->
+      <form class="ai-input-form" id="aiChatForm" onsubmit="handleAiChatSubmit(event)">
+        <input type="text" id="aiUserInput" placeholder="Ask a question (e.g., 'What did he teach at SASTRA?')..." autocomplete="off" required>
+        <button type="submit" class="btn-send-ai" aria-label="Send Message" title="Send message">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
