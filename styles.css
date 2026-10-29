@@ -2264,6 +2264,16 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 10px 30px rgba(99, 102, 241, 0.6);
 }
 
+/* Simple chatbot icon override */
+.ai-floating-trigger.ai-simple-icon {
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  border-radius: 50%;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
 .ai-trigger-sparkle {
   font-size: 1.15rem;
   animation: sparkleRotate 3s linear infinite;
