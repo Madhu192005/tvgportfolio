@@ -963,6 +963,44 @@ function initWelcomeScreen() {
     }, 550);
   }
 
+  // Interactive Dance Move Switcher
+  const danceBtn = document.getElementById('changeDanceBtn');
+  const danceBtnText = document.getElementById('danceBtnText');
+  const avatarImg = document.getElementById('welcomeAvatarImg');
+
+  const danceMoves = [
+    { class: 'dance-groove', label: 'Dance: Rhythm Groove ??' },
+    { class: 'dance-bounce', label: 'Dance: Disco Bounce ?' },
+    { class: 'dance-spin', label: 'Dance: Victory Spin ??' }
+  ];
+  let currentDanceIdx = 0;
+
+  function switchDanceMove() {
+    if (!avatarImg) return;
+    danceMoves.forEach(m => avatarImg.classList.remove(m.class));
+    currentDanceIdx = (currentDanceIdx + 1) % danceMoves.length;
+    const nextMove = danceMoves[currentDanceIdx];
+    avatarImg.classList.add(nextMove.class);
+    if (danceBtnText) danceBtnText.textContent = nextMove.label;
+    if (typeof showToast === 'function') {
+      showToast(`Switched move to ${nextMove.label}`);
+    }
+  }
+
+  if (danceBtn) {
+    danceBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      switchDanceMove();
+    });
+  }
+
+  if (avatarImg) {
+    avatarImg.addEventListener('click', (e) => {
+      e.stopPropagation();
+      switchDanceMove();
+    });
+  }
+
   // Dismiss handlers
   if (enterBtn) {
     enterBtn.addEventListener('click', (e) => {
@@ -971,8 +1009,18 @@ function initWelcomeScreen() {
     });
   }
 
-  if (welcomeCard) {
-    welcomeCard.addEventListener('click', dismissWelcome);
+  const welcomeContent = document.querySelector('.welcome-content-box');
+  if (welcomeContent) {
+    welcomeContent.addEventListener('click', (e) => {
+      // If clicking dance button or links, don't dismiss
+      if (e.target.closest('#changeDanceBtn')) return;
+      dismissWelcome();
+    });
+  }
+
+  const welcomeBackdrop = document.querySelector('.welcome-backdrop-particles');
+  if (welcomeBackdrop) {
+    welcomeBackdrop.addEventListener('click', dismissWelcome);
   }
 
   // Keyboard accessibility (Enter, Space, Escape)
